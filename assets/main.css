@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  font: "蘋果中黑體", "微軟正黑體", Verdana, Geneva, sans-serif;
+  background: #F7F2F2;
+}
+
+h3.result_list {
+  width: 210px;
+  height: 50px;
+  margin: 20px auto;
+  background: url('/assets/images/image.png') no-repeat -200px -515px;
+}
+
+h2.logo {
+  width: 482px;
+  min-height: 82px;
+  padding: 50px;
+  margin: 0 auto;
+  background: url('/assets/images/pattern.png') no-repeat center center;
+}
+
+.searchbox {
+  width: 480px;
+  height: 38px;
+  padding: 2px;
+  margin: 0 auto;
+}
+
+.searchbox input {
+  display: inline-block;
+  width: 400px;
+  font-size: 14.5px;
+  letter-spacing: 0.15em;
+  color: #898989;
+  text-align: center;
+}
+
+.searchbox a {
+  display: inline-block;
+  width: 75px;
+  font-size: 14.5px;
+  line-height: 2.7em;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background: #898989;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.searchbox a:hover {
+  background: #787878;
+}
+
+@media screen and (max-width: 652px) {
+  div.column {
+    padding-top: 2.5%;
+  }
+  h2.logo {
+    width: 80%;
+    min-height: 42px;
+    padding: 13% 0 5%;
+    background: url('/assets/images/pattern.png') no-repeat center center;
+    background-size: contain;
+  }
+  .searchbox {
+    width: 80%;
+  }
+  .searchbox input {
+    width: 80%;
+  }
+  .searchbox a {
+    width: 17%;
+  }
+}
+
+@media screen and (max-width: 467px) {
+  div.column {
+    padding: 22% 0 0;
+  }
+  h2.logo {
+    width: 95%;
+  }
+  .searchbox {
+    width: 95%;
+  }
+}
+
+.containbox {
+  background: #fff;
+}
+
+.photobox {
+  width: 90px;
+  height: 90px;
+  margin: auto;
+  background: url('/assets/images/image.png') no-repeat -310px -420px;
+  border-radius: 30px;
+}
+
+a.brand {
+  display: block;
+  width: 215px;
+  height: 19px;
+  text-indent: -9999px;
+  background: url('/assets/images/logo.png') no-repeat;
+  background-size: 80%;
+}
+
+/* 首頁內容 */
