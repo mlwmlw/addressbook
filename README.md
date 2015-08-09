@@ -1,4 +1,4 @@
-# addressbook
+# Addressbook
 g0v kuansim addressbook rewrite in reactjs
 
 # Developement
@@ -6,9 +6,12 @@ g0v kuansim addressbook rewrite in reactjs
     $ npm install
     $ npm start
 
-
-# demo 
+# Demo 
 http://addressbook.g0v.mlwmlw.org/
+
+# links
+ - Mockup http://hackfoldr.org/kuansim/PbgdGwk3ppL
+ - Popolo Human Instrumentality Project http://hackfoldr.org/kuansim/4FYtOSv9vl6
 
 # License
 
