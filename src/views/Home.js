@@ -3,22 +3,27 @@ import Nav from './Nav';
 import Result from '../components/Result';
 import {Button} from 'react-semantify';
 export default class Home extends Component {
+  search(e) {
+    const { search } = this.props;
+    this.props.search(this.refs.keyword.getDOMNode().value);
+    e.preventDefault();
+  }
   render() {
-  	const result = [
-      {name: '喵喵', phone: '0912345678', fax: '02-1284-2134'}
-    ];
+    const { addressbook } = this.props;
   	return (
       <div>
-        <Nav />
+
         <div className="container">
           <div className="ui one column page grid">
             <div className="column">
               <h2 className="logo" />
+              <form onSubmit={this.search.bind(this)}>
               <div className="ui action input searchbox">
-                <input placeholder="請直接輸入想搜尋的關鍵字" type="text"></input>
-                <Button color="black" >送 出</Button>
+                <input ref="keyword" placeholder="請直接輸入想搜尋的關鍵字" type="text"></input>
+                <Button onClick={this.search.bind(this)} type="submit" color="black" >送 出</Button>
               </div>
-              <Result data={result} />
+              </form>
+              <Result data={addressbook} />
               <div className="footer" />
             </div>
           </div>
@@ -28,4 +33,4 @@ export default class Home extends Component {
     );
   }
 }
-////
+

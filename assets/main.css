@@ -16,12 +16,18 @@ h3.result_list {
   margin: 20px auto;
   background: url('/assets/images/image.png') no-repeat -200px -515px;
 }
-
+.containbox {
+  padding: 0px 1em;
+}
+.four .item, .four .item .content {
+ width:90px;
+ text-align: center;
+}
 h2.logo {
   width: 482px;
   min-height: 82px;
   padding: 50px;
-  margin: 0 auto;
+  margin: 5% auto 0;
   background: url('/assets/images/pattern.png') no-repeat center center;
 }
 

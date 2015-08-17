@@ -18,7 +18,7 @@ export default class Result extends Component {
                       <div className="photobox" />
                     </div>
                     <div className="content">
-                      <p>{row.name}</p>
+                      {row.name}
                     </div>
                   </div>
                 </div>
