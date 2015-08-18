@@ -29,6 +29,7 @@
     "redux-thunk": "^0.1.0"
   },
   "devDependencies": {
+    "react-hot-loader": "^1.2.8",
     "redux-devtools": "^1.0.2",
     "webpack-dev-server": "^1.10.1"
   }
