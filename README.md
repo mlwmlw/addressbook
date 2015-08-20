@@ -11,7 +11,7 @@ http://addressbook.g0v.mlwmlw.org/
 
 # links
  - Mockup http://hackfoldr.org/kuansim/PbgdGwk3ppL
- - Popolo Human Instrumentality Project http://hackfoldr.org/kuansim/4FYtOSv9vl6
+ - Popolo Instrumentality Project http://hackfoldr.org/kuansim/4FYtOSv9vl6
 
 # License
 
