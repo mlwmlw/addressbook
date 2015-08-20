@@ -1,16 +1,8 @@
-import { SEARCH } from '../actions/addressbook';
-
-const book = [ {name: '喵喵', phone: '0912345678', fax: '02-1284-2134'}];
+import { SEARCH, FETCH_PEOPLE} from '../constants'
 export default function search(state = [], action) {
   switch (action.type) {
-	  case SEARCH:
-	  	if(state.length == 0) {
-			state = book;
-	  	}
-	   	else {
-	   		state = state.map( row => Object.assign({}, row, {name: action.keyword}) );
-	   	}	   		
-	   	return state;
+	  case FETCH_PEOPLE:
+	   	return action.people;
 	  default:
 	    return state;
   }

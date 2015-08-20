@@ -2,10 +2,13 @@ import React, {Component} from 'react';
 import Nav from './Nav';
 import Result from '../components/Result';
 import {Button} from 'react-semantify';
+import {searchPeople} from '../actions/addressbook';
 export default class Home extends Component {
   search(e) {
-    const { search } = this.props;
-    this.props.search(this.refs.keyword.getDOMNode().value);
+    //const { search } = this.props;
+    //this.props.search(this.refs.keyword.getDOMNode().value);
+    const keyword = this.refs.keyword.getDOMNode().value;
+    this.props.actions.searchPeople({name: keyword});
     e.preventDefault();
   }
   render() {

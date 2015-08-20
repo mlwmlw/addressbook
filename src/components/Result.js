@@ -15,7 +15,7 @@ export default class Result extends Component {
                 <div className="four wide column">
                   <div className="item">
                     <div className="image">
-                      <div className="photobox" />
+                      <div className="photobox" style={row.image ? {backgroundImage: 'url(' + row.image + ')', backgroundSize: '95px', backgroundPosition: '-5px 0px'}: {}}/>
                     </div>
                     <div className="content">
                       {row.name}

@@ -10,12 +10,24 @@ import * as AddressbookActions from '../actions/addressbook';
 }))
 export default class AddressBookApp extends Component {
   render() {
-    const { addressbook, dispatch } = this.props;
+    const { addressbook, actions } = this.props;
     return (
       <div>
         <Nav />
-        <Home addressbook={addressbook} {...bindActionCreators(AddressbookActions, dispatch)} />
+        <Home addressbook={addressbook} actions={actions} />
       </div>
     );
   }
 }
+function mapState(state) {
+  return {
+    addressbook: state.addressbook
+  };
+}
+
+function mapDispatch(dispatch) {
+  return {
+    actions: bindActionCreators(AddressbookActions, dispatch)
+  };
+}
+export default connect(mapState, mapDispatch)(AddressBookApp);
