@@ -1,20 +1,8 @@
 import React, {Component} from 'react';
-import { createStore, combineReducers, compose, applyMiddleware } from 'redux';
-import { Provider } from 'react-redux';
 import AddressBookApp from './AddressBookApp';
-import { devTools, persistState } from 'redux-devtools';
+import { Provider } from 'react-redux';
 import { DevTools, DebugPanel, LogMonitor } from 'redux-devtools/lib/react';
-import * as reducers from '../reducers';
-import thunk from 'redux-thunk';
-const finalCreateStore = compose(
-  applyMiddleware(thunk),
-  devTools(),
-  persistState(window.location.href.match(/[?&]debug_session=([^&]+)\b/)),
-  createStore
-);
-
-const reducer = combineReducers(reducers);
-const store = finalCreateStore(reducer);
+import store from '../store'
 
 export default class App extends Component {
   render() {

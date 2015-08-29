@@ -9,7 +9,9 @@ body {
   font: "蘋果中黑體", "微軟正黑體", Verdana, Geneva, sans-serif;
   background: #F7F2F2;
 }
-
+#nav > .container {
+  width: 100%;
+}
 h3.result_list {
   width: 210px;
   height: 50px;
@@ -27,7 +29,7 @@ h2.logo {
   width: 482px;
   min-height: 82px;
   padding: 50px;
-  margin: 5% auto 0;
+  margin: 10% auto 0;
   background: url('/assets/images/pattern.png') no-repeat center center;
 }
 
@@ -106,16 +108,16 @@ h2.logo {
   height: 90px;
   margin: auto;
   background: url('/assets/images/image.png') no-repeat -310px -420px;
-  border-radius: 30px;
+  border-radius: 45px;
 }
 
 a.brand {
   display: block;
-  width: 215px;
-  height: 19px;
+  width: 180px;
+  height: 20px;
   text-indent: -9999px;
-  background: url('/assets/images/logo.png') no-repeat;
-  background-size: 80%;
+  background: url('/assets/images/logo.png') no-repeat !important;
+  background-size: 100%  !important;
 }
 
 /* 首頁內容 */

@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import Home from './Home';
-import Nav from './Nav';
+import Nav from '../components/Nav';
+import Footer from '../components/Footer';
 import * as AddressbookActions from '../actions/addressbook';
 
 @connect(state => ({
@@ -15,6 +16,7 @@ export default class AddressBookApp extends Component {
       <div>
         <Nav />
         <Home addressbook={addressbook} actions={actions} />
+        <Footer />
       </div>
     );
   }
