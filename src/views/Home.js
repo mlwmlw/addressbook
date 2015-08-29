@@ -17,7 +17,7 @@ export default class Home extends Component {
   	return (
       <div>
         <div className="full container">
-          <div className="ui one column page grid">
+          <div className="ui page centered one column grid ">
             <div className="column">
               <h2 className="logo" />
             </div>
@@ -28,8 +28,13 @@ export default class Home extends Component {
                   <Button onClick={this.search.bind(this)} type="submit" color="gray" >送 出</Button>
                 </div>
               </form>
-              <Result data={addressbook} />
-            
+              <Result addressbook={addressbook} />
+              <div className="ui four column centered row">
+                <div className="column org-box">
+                </div>
+                <div className="column people-box">
+                </div>
+              </div>
           </div>
         </div>
       </div>

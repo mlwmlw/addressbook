@@ -1,11 +1,7 @@
 import 'whatwg-fetch';
 import * as constants from '../constants'
 const API = 'https://taiwan.popit.mysociety.org/api/v0.1';
-export function search(keyword) {
-	return {
-		type: constants.SEARCH, keyword
-	};
-}
+
 export function loading() {
 	return {
 		type: constants.LOADING
@@ -18,7 +14,9 @@ export function searchPeople(options) {
 		.then(res => res.json())
 		.then(res => dispatch({
 			type: constants.FETCH_PEOPLE,
-			people: res.result
+			people: res.result,
+			total: res.total,
+			page: res.page
 		}));
 	}
 }

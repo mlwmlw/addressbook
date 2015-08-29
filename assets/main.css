@@ -111,6 +111,54 @@ h2.logo {
   border-radius: 45px;
 }
 
+.people-box {
+  height: 200px;
+  min-width: 200px;
+  max-width: 200px;
+  margin: auto 20px;
+  background: url('/assets/images/image.png') no-repeat 0px 0px;
+}
+.org-box {
+  height: 200px;
+  min-width: 200px;
+  max-width: 200px;
+  margin: auto 20px;
+  background: url('/assets/images/image.png') no-repeat 0px -210px;
+}
+
+.party {
+  background: url('/assets/images/image.png') no-repeat;
+  width: 23px;
+  height: 18px; 
+  margin:0 auto;
+}
+.party-pfp {
+ background-position: -46px -542px;
+}
+.party-none {
+  background-position: -69px -542px;
+}
+.party-dpp {
+  background-position: 0px -542px;
+}
+.party-kmp {
+  background-position: -23px -542px;
+}
+/* 台聯   */
+.party-tsu {
+  background-position: -110px -542px;
+  width:16px;
+}
+/* 綠黨 */
+.party-gpt {
+  background-position: -126px -542px;
+  width:16px;
+}
+/* 新黨 */
+.party-np {
+  background-position: -93px -542px;
+  width:16px;
+}
 a.brand {
   display: block;
   width: 180px;
