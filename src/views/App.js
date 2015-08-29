@@ -11,11 +11,15 @@ export default class App extends Component {
         <Provider store={store}>
           {() => <AddressBookApp />}
         </Provider>
-        
-        <DebugPanel top right bottom>
-          <DevTools store={store}
-                  monitor={LogMonitor} />
-        </DebugPanel>
+        {() => {
+          if (__DEVTOOLS__) {
+            return (
+              <DebugPanel top right bottom>
+                <DevTools store={store}
+                      monitor={LogMonitor} />
+              </DebugPanel>)
+          }
+        }()}
       </div>
     );
   }
