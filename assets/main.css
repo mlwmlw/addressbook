@@ -167,5 +167,15 @@ a.brand {
   background: url('/assets/images/logo.png') no-repeat !important;
   background-size: 100%  !important;
 }
-
+.home.container {
+	min-height: 700px;
+}
+footer {
+	background-color: #3a3939;
+	background-image: url('/assets/images/g0v.png');
+	background-repeat: no-repeat;
+	height: 100px;
+	background-position: 95%;
+}
 /* 首頁內容 */
+
