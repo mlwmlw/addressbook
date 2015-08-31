@@ -88,9 +88,6 @@ h2.logo {
 }
 
 @media screen and (max-width: 467px) {
-  div.column {
-    padding: 22% 0 0;
-  }
   h2.logo {
     width: 95%;
   }
