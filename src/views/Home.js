@@ -15,7 +15,7 @@ export default class Home extends Component {
   render() {
     const { addressbook } = this.props;
   	return (
-      <div>
+      <div className="home container">
         <div className="full container">
           <div className="ui page centered one column grid ">
             <div className="column">
